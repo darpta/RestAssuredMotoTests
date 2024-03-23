@@ -11,8 +11,8 @@ public class JacketsTests extends MotoConfig{
         given()
                 .log().all()
                 .when()
-                .get(MotoEndpoints.JACKETS)
+        .get(MotoEndpoints.JACKETS)
                 .then()
-                .log().all();
+        .log().all();
     }
 }
