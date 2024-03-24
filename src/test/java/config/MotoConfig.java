@@ -7,6 +7,8 @@ import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import org.junit.BeforeClass;
 
+import static org.hamcrest.Matchers.lessThan;
+
 public class MotoConfig {
 
     @BeforeClass
@@ -21,6 +23,7 @@ public class MotoConfig {
 
         RestAssured.responseSpecification = new ResponseSpecBuilder()
                 .expectStatusCode(200)
+                .expectResponseTime(lessThan(3000L))
                 .build();
     }
 }

@@ -2,6 +2,7 @@ package config;
 
 public interface MotoEndpoints {
     String LEATT_MUDCOAT_BLACK = "/products/PIA-317641";
+    String PIA_PRODUCTS = "/products/PIA-{productID}";
     String JACKETS = "/categories/root/10008/10070/10259/products";
     String PROMOTIONS = "/categories/outlet/Outlet_IE/products";
     String ADD_YOUR_BIKE = "/newsletters/subscribe";

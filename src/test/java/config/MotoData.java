@@ -61,4 +61,6 @@ public interface MotoData {
             "    \"shipToAddress\": true\n" +
             "  }\n" +
             "}";
+
+    String PROMOTIONS_TEST_VALUE = "https://pierce-images.imgix.net/images/9/c/9/d/9c9da6262ac017cc6d92310b207bc1f7ffc72c31_3_PIA_150291_0_120.PNG";
 }
